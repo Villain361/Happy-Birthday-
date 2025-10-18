@@ -15,7 +15,7 @@ const second = 1000,
   minute = second * 60,
   hour = minute * 60,
   day = hour * 24;
-let countDown = new Date('Oct 19, 2025 00:00:00 +0600').getTime(), // Set to past date for immediate trigger
+let countDown = new Date('Oct 19, 2025 00:00:00 +0600').getTime(), // Updated to October 19, 2025, 12:00 AM +06
   x = setInterval(function () {
     let now = new Date().getTime(),
       distance = countDown - now;
@@ -1176,5 +1176,4 @@ frameHandler(); // Init frame handler
 window.addEventListener('error', function(errorEvent) {
 	console.error(errorEvent);
 	store.setState({ openHelpTopic: 'error' });
-
 });
